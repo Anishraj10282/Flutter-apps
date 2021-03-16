@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'To Do App',
-      home: SafeArea(child:MyHomePage()),
+      home: SafeArea(child:WelcomeScreen()),
       routes: {
         MyHomePage.routeName: (ctx)=>MyHomePage(),
       },

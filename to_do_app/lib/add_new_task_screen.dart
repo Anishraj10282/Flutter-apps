@@ -34,20 +34,6 @@ class _NewTaskState extends State<NewTask>{
                   fontWeight: FontWeight.w600,
                   color: Colors.black54),
             )),
-        Container(
-          width:MediaQuery.of(context).size.width * 0.9,
-            child: Column(children: [
-          TextField(
-            decoration: InputDecoration(
-              labelText: "Task Name:",
-            ),
-          ),
-              IconButton(icon:Icon(Icons.alarm, size: 40 ,), onPressed: (){
-                timePicker(context);
-                print(time);
-              },),
-              Text('Time-:${time.hour}:${time.minute}')
-        ]))
       ],
     ));
   }
